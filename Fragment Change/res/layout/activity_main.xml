@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172sp"
+        android:layout_marginLeft="172sp"
+        android:layout_marginTop="88sp"
+        android:layout_marginEnd="180sp"
+        android:layout_marginRight="180sp"
+        android:text="Change View"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/usernametext"
+        android:layout_width="320sp"
+        android:layout_height="43sp"
+        android:layout_marginStart="43sp"
+        android:layout_marginLeft="43sp"
+        android:layout_marginTop="51sp"
+        android:layout_marginEnd="48sp"
+        android:layout_marginRight="48sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textStyle="bold"
+        android:hint="username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/usermailText"
+        android:layout_width="316sp"
+        android:layout_height="43sp"
+        android:layout_marginStart="47sp"
+        android:layout_marginLeft="47sp"
+        android:layout_marginTop="33sp"
+        android:layout_marginEnd="48sp"
+        android:layout_marginRight="48sp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textStyle="bold"
+        android:hint="email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernametext" />
+
+    <Button
+        android:id="@+id/savebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161sp"
+        android:layout_marginLeft="161sp"
+        android:layout_marginTop="28sp"
+        android:layout_marginEnd="162sp"
+        android:layout_marginRight="162sp"
+        android:text="Save"
+        android:backgroundTint="@android:color/black"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_light"
+        android:background="@drawable/button_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usermailText" />
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="365sp"
+        android:layout_height="303sp"
+        android:layout_marginStart="24sp"
+        android:layout_marginLeft="24sp"
+        android:layout_marginTop="18sp"
+        android:layout_marginEnd="22sp"
+        android:layout_marginRight="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/savebutton">
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
